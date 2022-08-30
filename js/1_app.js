@@ -7,6 +7,19 @@ const loadPhone = async (searchText) => {
 const displayPhone = phones => {
     const phonesContainer = document.getElementById('phone-container');
     phonesContainer.textContent = '';
+    // display 10 phones only
+    phones = phones.slice(0, 10);
+
+    // display no phone found
+    const noPhone = document.getElementById('no-found-message');
+    if (phones.length === 0) {
+        noPhone.classList.remove('d-none');
+    }
+    else {
+        noPhone.classList.add('d-none');
+    }
+
+    // display all phone
     phones.forEach(phone => {
         console.log(phone);
         const phoneDiv = document.createElement('div');
