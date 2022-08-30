@@ -12,26 +12,25 @@
 
 <body>
     <header>
-        <h1>Welcome to my Phone Hunter</h1>
+        <h1 class="text-center my-4">Welcome to my Phone Hunter</h1>
     </header>
-<main class="container">
-    <section>
-        <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- <div class="col">
-                <div class="card">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div> -->
-  
-        </div>
-    </section>
-</main>
+    <main class="container">
+        <!-- search field -->
+        <section>
+            <div class="mb-3 w-50 mx-auto text-center">
+                <input id="search-field" type="email" class="form-control my-2 text-center" placeholder="search your phone">
+                <button id="btn-search" class="btn btn-primary">Search</button>
+              </div>
+        </section>
+        <!-- display search result -->
+        <section>
+            <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- inner html from js -->
+            </div>
+        </section>
+    </main>
 
-    
+
     <!-- custom javaScript -->
     <script src="js/1_app.js"></script>
     <!-- Bootstrap -->
