@@ -12,12 +12,12 @@
 
 <body>
     <header>
-        <h1 class="text-center my-4">Welcome to my Phone Hunter</h1>
+        <h1 class="my-4">Welcome to my Phone Hunter</h1>
     </header>
     <main class="container">
         <!-- search field -->
         <section>
-            <div class="mb-3 w-50 mx-auto text-center">
+            <div class="mb-3 w-50">
                 <input id="search-field" type="email" class="form-control my-2 text-center"
                     placeholder="search your phone">
                 <button id="btn-search" class="btn btn-primary">Search</button>
@@ -30,6 +30,9 @@
             </div>
             <div id="no-found-message" class="mt-4 d-none">
                 <h3 class="text-warning text-center">No Phone Found. Please try a new search</h3>
+            </div>
+            <div id="show-all" class="text-center my-3 d-none">
+                <div id="btn-show-all" class="btn btn-primary">Show All</div>
             </div>
         </section>
         <!-- loader -->
