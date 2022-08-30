@@ -18,9 +18,10 @@
         <!-- search field -->
         <section>
             <div class="mb-3 w-50 mx-auto text-center">
-                <input id="search-field" type="email" class="form-control my-2 text-center" placeholder="search your phone">
+                <input id="search-field" type="email" class="form-control my-2 text-center"
+                    placeholder="search your phone">
                 <button id="btn-search" class="btn btn-primary">Search</button>
-              </div>
+            </div>
         </section>
         <!-- display search result -->
         <section>
@@ -29,6 +30,14 @@
             </div>
             <div id="no-found-message" class="mt-4 d-none">
                 <h3 class="text-warning text-center">No Phone Found. Please try a new search</h3>
+            </div>
+        </section>
+        <!-- loader -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
         </section>
     </main>
